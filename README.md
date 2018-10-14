@@ -18,7 +18,7 @@ Una vez establecido el contenido en un TextView, **HighlightTextView** te permit
 
 #### Definición de opciones disponibles
 #### XML
-#
+
 Desde XML sólo podemos definir una cadena a resaltar. No se pueden definir eventos.
 Atributo Xml | Definición
 ------------ | -------------
@@ -29,7 +29,7 @@ htv_highlight_style | Estilo de la cadena a buscar. Ej: R.style.Title. Por defec
 htv_ignorecase | Si se ignora mayúsculas y minúsculas. Por defecto false.
 
 #### Programación
-#
+
 Desde programación podemos definir múltiples cadenas a resaltar. Para ello hay  que establecer los estados en un ViewModel.
 Atributo ViewModel | Definición
 ------------ | -------------
@@ -41,7 +41,7 @@ styleHighlightText | Estilo de la cadena a buscar. Ej: R.style.Title. Por defect
 ignoreCase | Si se ignora mayúsculas y minúsculas. Por defecto false.
 
 ## Ejemplos
-#
+
 #### Ejemplo 1. Configuración mínima desde XML.
 Link al código: **[Ejemplo 1]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_01.xml)
 ```
