@@ -5,7 +5,7 @@
 Una vez establecido el contenido en un TextView, **HighlightTextView** te permite de una forma sencilla, añadir estilos y eventos personalizados en múltiples cadenas.
 **HightlightTextView** te evita tener que estar trabajando con SpannableString para tener que establecer los distintos estilos en un TextView. 
 
-##### Sus características principales son:
+#### Sus características principales son:
 * Permite resaltar una cadena.
 * Permite añadir el evento onclick en la cadena elegida.
 * Permite personalizar con un estilo la cadena a resaltar.
@@ -16,8 +16,8 @@ Una vez establecido el contenido en un TextView, **HighlightTextView** te permit
 * Posibilidad de configurarse a través de xml o por código.
 * Trabaja con TextView personalizados.
 
-##### Definición de opciones disponibles
-##### XML
+#### Definición de opciones disponibles
+#### XML
 #
 Desde XML sólo podemos definir una cadena a resaltar. No se pueden definir eventos.
 Atributo Xml | Definición
@@ -28,7 +28,7 @@ htv_limit | Número de palabras que se quieren encontrar. Por defecto, son todas
 htv_highlight_style | Estilo de la cadena a buscar. Ej: R.style.Title. Por defecto, Bold.
 htv_ignorecase | Si se ignora mayúsculas y minúsculas. Por defecto false.
 
-##### Programación
+#### Programación
 #
 Desde programación podemos definir múltiples cadenas a resaltar. Para ello hay  que establecer los estados en un ViewModel.
 Atributo ViewModel | Definición
@@ -40,9 +40,9 @@ limit | Número de palabras que se quieren encontrar. Por defecto, son todas.
 styleHighlightText | Estilo de la cadena a buscar. Ej: R.style.Title. Por defecto, Bold.
 ignoreCase | Si se ignora mayúsculas y minúsculas. Por defecto false.
 
-##### Ejemplos
+#### Ejemplos
 #
-##### Ejemplo 1. Configuración mínima desde XML.
+#### Ejemplo 1. Configuración mínima desde XML.
 Link al código: **[Ejemplo 1]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_01.xml)
 ```
 <com.jmperezra.highlighttextview.HighlightTextView
@@ -53,7 +53,7 @@ Link al código: **[Ejemplo 1]** (https://github.com/jmperezra/HighlightTextView
       style="@style/Example"
       />
 ```
-##### Ejemplo 2. Configuración completa desde XML.
+#### Ejemplo 2. Configuración completa desde XML.
 Link al código: **[Ejemplo 2]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_02.xml)
 ```
 <com.jmperezra.highlighttextview.HighlightTextView
@@ -68,7 +68,7 @@ Link al código: **[Ejemplo 2]** (https://github.com/jmperezra/HighlightTextView
       app:htv_highlight_style="@style/Bold"
       />
 ```
-##### Ejemplo 3. Configuración desde XML donde se limita a 2 las palabras a resaltar (htv_limit = 2).
+#### Ejemplo 3. Configuración desde XML donde se limita a 2 las palabras a resaltar (htv_limit = 2).
 Link al código: **[Ejemplo 3]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_03.xml)
 ```
 <com.jmperezra.highlighttextview.HighlightTextView
@@ -83,7 +83,7 @@ Link al código: **[Ejemplo 3]** (https://github.com/jmperezra/HighlightTextView
       app:htv_highlight_style="@style/Bold"
       />
 ```
-##### Ejemplo 3. Configuración desde XML donde se limita a 2 las palabras a resaltar (htv_limit = 2).
+#### Ejemplo 3. Configuración desde XML donde se limita a 2 las palabras a resaltar (htv_limit = 2).
 Link al código: **[Ejemplo 3]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_03.xml)
 ```
 <com.jmperezra.highlighttextview.HighlightTextView
@@ -98,7 +98,7 @@ Link al código: **[Ejemplo 3]** (https://github.com/jmperezra/HighlightTextView
       app:htv_highlight_style="@style/Bold"
       />
 ```
-##### Ejemplo 4. Configuración desde XML donde se limita a 2 las palabras a resaltar (htv_limit = 2) y se inicia la búsqueda desde el inicio (htv_start_position_occurrence = 0).
+#### Ejemplo 4. Configuración desde XML donde se limita a 2 las palabras a resaltar (htv_limit = 2) y se inicia la búsqueda desde el inicio (htv_start_position_occurrence = 0).
 Link al código: **[Ejemplo 4]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_04.xml)
 ```
 <com.jmperezra.highlighttextview.HighlightTextView
@@ -112,7 +112,7 @@ Link al código: **[Ejemplo 4]** (https://github.com/jmperezra/HighlightTextView
       app:htv_highlight_style="@style/Bold"
       />
 ```
-##### Ejemplo 5. Configuración desde XML donde se deja por defecto las ocurrencias a encontrar (todas) y se establece la ocurrencia inical en la segunda palabra (htv_start_position_occurrence="1"").
+#### Ejemplo 5. Configuración desde XML donde se deja por defecto las ocurrencias a encontrar (todas) y se establece la ocurrencia inical en la segunda palabra (htv_start_position_occurrence="1"").
 Link al código: **[Ejemplo 5]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_05.xml)
 ```
 <com.jmperezra.highlighttextview.HighlightTextView
@@ -126,7 +126,7 @@ Link al código: **[Ejemplo 5]** (https://github.com/jmperezra/HighlightTextView
       app:htv_highlight_style="@style/Bold"
       />
 ```
-##### Ejemplo 6. Configuración desde XML donde se establece un estilo (htv_highlight_style).
+#### Ejemplo 6. Configuración desde XML donde se establece un estilo (htv_highlight_style).
 Link al código: **[Ejemplo 6]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_06.xml)
 ```
 <com.jmperezra.highlighttextview.HighlightTextView
@@ -138,7 +138,7 @@ Link al código: **[Ejemplo 6]** (https://github.com/jmperezra/HighlightTextView
       app:htv_highlight_style="@style/Link"
       />
 ```
-##### Ejemplo 7. Configuración desde XML donde se ignoran las mayúsculas (htv_ignorecase).
+#### Ejemplo 7. Configuración desde XML donde se ignoran las mayúsculas (htv_ignorecase).
 Link al código: **[Ejemplo 7]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_07.xml)
 ```
 <com.jmperezra.highlighttextview.HighlightTextView
@@ -151,7 +151,7 @@ Link al código: **[Ejemplo 7]** (https://github.com/jmperezra/HighlightTextView
       />
 ```
 
-##### Ejemplo 8. Configuración mínima desde código (Kotlin).
+#### Ejemplo 8. Configuración mínima desde código (Kotlin).
 Link al código: **[Ejemplo 8]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/java/com/jmperezra/samplehighlighttextview/MainKotlin.kt)
 ```
 private fun initExample8() {
@@ -164,7 +164,7 @@ private fun buildMinConfigViewModel() =
     
 ```
 
-##### Ejemplo 9. Configuración completa desde código (Kotlin).
+#### Ejemplo 9. Configuración completa desde código (Kotlin).
 Link al código: **[Ejemplo 9]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/java/com/jmperezra/samplehighlighttextview/MainKotlin.kt)
 ```
 private fun initExample9() {
@@ -181,7 +181,7 @@ private fun buildFullConfigViewModel() =
     
 ```
 
-##### Ejemplo 10. Configuración completa desde código con evento (Kotlin).
+#### Ejemplo 10. Configuración completa desde código con evento (Kotlin).
 Link al código: **[Ejemplo 10]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/java/com/jmperezra/samplehighlighttextview/MainKotlin.kt)
 ```
 private fun initExample10() {
@@ -202,7 +202,7 @@ private fun showHelloWorldToast() {
     
 ```
 
-##### Ejemplo 11. Configuración con múltiples Highlight (Kotlin).
+#### Ejemplo 11. Configuración con múltiples Highlight (Kotlin).
 Link al código: **[Ejemplo 11]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/java/com/jmperezra/samplehighlighttextview/MainKotlin.kt)
 ```
 private fun initExample11() {
@@ -245,7 +245,7 @@ private fun showRedToast() {
     
 ```
 
-##### Ejemplo 12. Configuración con un Custom  TextView (Kotlin).
+#### Ejemplo 12. Configuración con un Custom  TextView (Kotlin).
 Link al código: **[Ejemplo 12]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_12.xml)
 ```
 <com.jmperezra.samplehighlighttextview.CustomTextView
@@ -258,7 +258,7 @@ Link al código: **[Ejemplo 12]** (https://github.com/jmperezra/HighlightTextVie
       />
 ```
 
-##### Ejemplo 8. Configuración mínima desde código (Java).
+#### Ejemplo 8. Configuración mínima desde código (Java).
 Link al código: **[Ejemplo 8]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/java/com/jmperezra/samplehighlighttextview/MainJava.java)
 ```
 private void initExample8() {
@@ -273,7 +273,7 @@ private HighlightTextViewModel buildMinConfigViewModel() {
     
 ```
 
-##### Ejemplo 9. Configuración completa desde código (Java).
+#### Ejemplo 9. Configuración completa desde código (Java).
 Link al código: **[Ejemplo 9]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/java/com/jmperezra/samplehighlighttextview/MainJava.java)
 ```
 private void initExample9() {
@@ -287,7 +287,7 @@ private HighlightTextViewModel buildFullConfigViewModel() {
 }
     
 ```
-##### Ejemplo 10. Configuración completa desde código con evento (Java).
+#### Ejemplo 10. Configuración completa desde código con evento (Java).
 Link al código: **[Ejemplo 10]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/java/com/jmperezra/samplehighlighttextview/MainJava.java)
 ```
 private void initExample10() {
@@ -309,7 +309,7 @@ private void showHelloWorldToast() {
     
 ```
 
-##### Ejemplo 11. Configuración con múltiples Highlight (Kotlin).
+#### Ejemplo 11. Configuración con múltiples Highlight (Kotlin).
 Link al código: **[Ejemplo 11]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/java/com/jmperezra/samplehighlighttextview/MainJava.java)
 ```
 private void initExample11() {
