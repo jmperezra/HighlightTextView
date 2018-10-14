@@ -20,6 +20,7 @@ Una vez establecido el contenido en un TextView, **HighlightTextView** te permit
 #### XML
 
 Desde XML sólo podemos definir una cadena a resaltar. No se pueden definir eventos.
+
 Atributo Xml | Definición
 ------------ | -------------
 htv_highlight_text | Cadena a buscar en el texto del TextView.  Valor obligatorio.
