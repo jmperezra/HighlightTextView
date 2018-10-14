@@ -40,7 +40,7 @@ limit | Número de palabras que se quieren encontrar. Por defecto, son todas.
 styleHighlightText | Estilo de la cadena a buscar. Ej: R.style.Title. Por defecto, Bold.
 ignoreCase | Si se ignora mayúsculas y minúsculas. Por defecto false.
 
-#### Ejemplos
+## Ejemplos
 #
 #### Ejemplo 1. Configuración mínima desde XML.
 Link al código: **[Ejemplo 1]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_01.xml)
