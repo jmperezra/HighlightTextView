@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+  <android.support.v7.widget.AppCompatTextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/example10_desc"
+      style="@style/TitleExample"
+      />
+
+  <com.jmperezra.highlighttextview.HighlightTextView
+      android:id="@+id/htvExample10"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/text_lorem_ipsum"
+      style="@style/Example"
+      />
+
+</LinearLayout>

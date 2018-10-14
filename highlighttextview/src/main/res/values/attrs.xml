@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="HighlightTextView">
+    <attr format="string" name="htv_highlight_text"/>
+    <attr format="reference" name="htv_highlight_style"/>
+    <attr format="integer" name="htv_start_position_occurrence"/>
+    <attr format="integer" name="htv_limit"/>
+    <attr format="boolean" name="htv_ignorecase"/>
+  </declare-styleable>
+</resources>

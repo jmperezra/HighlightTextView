@@ -1,0 +1,58 @@
+<resources>
+  <string name="app_name">HighlightTextView</string>
+  <string name="text_lorem_ipsum">HighlightTextView es un componente para Android que permite resaltar palabras. También permite añadir eventos a esas palabras.</string>
+  <string name="hello_world">Hello World!</string>
+  <string name="hello_orange_world">Hello Orange World!</string>
+  <string name="hello_red_world">Hello Red World!</string>
+
+  <!-- Example 1 -->
+  <string name="example1_desc">Example 1. HighlightTextView from xml with minimum configuration.</string>
+  <string name="example1_text_to_highlight">Android</string>
+
+  <!-- Example 2 -->
+  <string name="example2_desc">Example 2. HighlightTextView from xml with full configuration.</string>
+  <string name="example2_text_to_highlight">palabras</string>
+
+  <!-- Example 3 -->
+  <string name="example3_desc">Example 3. Highlight with two words (htv_limit) from start paragraph (htv_start_position_occurrence).</string>
+  <string name="example3_text_to_highlight">palabras</string>
+
+  <!-- Example 4 -->
+  <string name="example4_desc">Example 4. Highlight default words (without htv_limit) from start paragraph (htv_start_position_occurrence).</string>
+  <string name="example4_text_to_highlight">a</string>
+
+  <!-- Example 5 -->
+  <string name="example5_desc">Example 5. Highlight default words (without htv_limit) from second occurrence (htv_start_position_occurrence).</string>
+  <string name="example5_text_to_highlight">palabras</string>
+
+  <!-- Example 6 -->
+  <string name="example6_desc">Example 6. Set style in highlight word (htv_highlight_style).</string>
+  <string name="example6_text_to_highlight">Android</string>
+
+  <!-- Example 7 -->
+  <string name="example7_desc">Example 7. HighlightTextView with ignore uppercase.</string>
+  <string name="example7_text_to_highlight">android</string>
+
+  <!-- Example 8 -->
+  <string name="example8_desc">Example 8. HighlightTextView build programmatically with minimum configuration.</string>
+  <string name="example8_text_to_highlight">Android</string>
+
+  <!-- Example 9 -->
+  <string name="example9_desc">Example 9. HighlightTextView build programmatically with full configuration.</string>
+  <string name="example9_text_to_highlight">Android</string>
+
+  <!-- Example 10 -->
+  <string name="example10_desc">Example 10. HighlightTextView build programmatically with click event.</string>
+  <string name="example10_text_to_highlight">Android</string>
+
+  <!-- Example 11 -->
+  <string name="example11_desc">Example 11. Multiple Highlight.</string>
+  <string name="example11_text_to_highlight_1">Android</string>
+  <string name="example11_text_to_highlight_2">componente</string>
+  <string name="example11_text_to_highlight_3">palabras</string>
+
+  <!-- Example 12 -->
+  <string name="example12_desc">Example 12. HighlightTextView with custom TextView.</string>
+  <string name="example12_text_to_highlight">Android</string>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+  <android.support.v7.widget.AppCompatTextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/example3_desc"
+      style="@style/TitleExample"
+      />
+
+  <com.jmperezra.highlighttextview.HighlightTextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/text_lorem_ipsum"
+      app:htv_highlight_text="@string/example3_text_to_highlight"
+      app:htv_ignorecase="false"
+      app:htv_limit="2"
+      app:htv_start_position_occurrence="0"
+      style="@style/Example"
+      app:htv_highlight_style="@style/Bold"
+      />
+
+</LinearLayout>

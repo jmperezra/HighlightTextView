@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainKotlin"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:baselineAligned="false"
+      android:orientation="vertical"
+      >
+
+    <include layout="@layout/view_example_01"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+    <include layout="@layout/view_example_02"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+    <include layout="@layout/view_example_03"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+    <include layout="@layout/view_example_04"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+    <include layout="@layout/view_example_05"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+    <include layout="@layout/view_example_06"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+    <include layout="@layout/view_example_07"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+    <include layout="@layout/view_example_08"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+    <include layout="@layout/view_example_09"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+    <include layout="@layout/view_example_10"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+    <include layout="@layout/view_example_11"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+    <include layout="@layout/view_example_12"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_vertical_examples"
+        />
+
+  </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
