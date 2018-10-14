@@ -5,7 +5,7 @@
 Una vez establecido el contenido en un TextView, **HighlightTextView** te permite de una forma sencilla, añadir estilos y eventos personalizados en múltiples cadenas.
 **HightlightTextView** te evita tener que estar trabajando con SpannableString para tener que establecer los distintos estilos en un TextView. 
 
-#### Sus características principales son:
+### Sus características principales son:
 * Permite resaltar una cadena.
 * Permite añadir el evento onclick en la cadena elegida.
 * Permite personalizar con un estilo la cadena a resaltar.
@@ -16,8 +16,8 @@ Una vez establecido el contenido en un TextView, **HighlightTextView** te permit
 * Posibilidad de configurarse a través de xml o por código.
 * Trabaja con TextView personalizados.
 
-#### Definición de opciones disponibles
-#### XML
+## Definición de opciones disponibles
+### XML
 
 Desde XML sólo podemos definir una cadena a resaltar. No se pueden definir eventos.
 
@@ -29,7 +29,7 @@ htv_limit | Número de palabras que se quieren encontrar. Por defecto, son todas
 htv_highlight_style | Estilo de la cadena a buscar. Ej: R.style.Title. Por defecto, Bold.
 htv_ignorecase | Si se ignora mayúsculas y minúsculas. Por defecto false.
 
-#### Programación
+### Programación
 
 Desde programación podemos definir múltiples cadenas a resaltar. Para ello hay  que establecer los estados en un ViewModel.
 
