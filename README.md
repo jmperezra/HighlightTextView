@@ -31,6 +31,7 @@ htv_ignorecase | Si se ignora mayúsculas y minúsculas. Por defecto false.
 #### Programación
 
 Desde programación podemos definir múltiples cadenas a resaltar. Para ello hay  que establecer los estados en un ViewModel.
+
 Atributo ViewModel | Definición
 ------------ | -------------
 textToHighlight | Cadena a buscar en el texto del TextView.  Valor obligatorio.
