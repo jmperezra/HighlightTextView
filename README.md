@@ -55,7 +55,7 @@ Link al código: **[Ejemplo 1]** (https://github.com/jmperezra/HighlightTextView
       style="@style/Example"
       />
 ```
-![Example1](https://github.com/jmperezra/HighlightTextView/screenshots/example1.png)
+![Example1](/screenshots/example1.png)
 
 #### Ejemplo 2. Configuración completa desde XML.
 Link al código: **[Ejemplo 2]** (https://github.com/jmperezra/HighlightTextView/blob/master/app/src/main/res/layout/view_example_02.xml)
