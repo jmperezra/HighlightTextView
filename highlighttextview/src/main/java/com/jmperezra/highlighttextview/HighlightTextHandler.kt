@@ -1,7 +1,5 @@
 package com.jmperezra.highlighttextview
 
-import android.support.v4.content.res.TypedArrayUtils.getBoolean
-import android.support.v4.content.res.TypedArrayUtils.getResourceId
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.TextPaint
@@ -18,7 +16,6 @@ import com.jmperezra.commons.None
 
 class HighlightTextHandler(private val textView: TextView) {
 
-	private val text: CharSequence = textView.text
 	private lateinit var highlightTextViewModels: List<HighlightTextViewModel>
 	private lateinit var currentHighlightTextViewModel: HighlightTextViewModel
 	private lateinit var spannableString: SpannableString
@@ -37,15 +34,18 @@ class HighlightTextHandler(private val textView: TextView) {
 		return spannableString
 	}
 
+	private fun getTextSpannable(): SpannableString = textView.text as SpannableString
+
 	/**
 	 * Delete whole spannable text
 	 */
 	fun resetHighlightText() {
-		if (text is SpannableString) {
-			val spans = text.getSpans(0, text.length, Object::class.java)
+		if (textView.text is SpannableString) {
+			val spans =
+					getTextSpannable().getSpans(0, getTextSpannable().length, Object::class.java)
 			spans.forEach {
 				if (it is CharacterStyle) {
-					text.removeSpan(it)
+					getTextSpannable().removeSpan(it)
 				}
 			}
 		}
@@ -53,7 +53,7 @@ class HighlightTextHandler(private val textView: TextView) {
 
 	private fun renderModelToSpan() {
 		if (this::highlightTextViewModels.isInitialized) {
-			spannableString = SpannableString(text)
+			spannableString = SpannableString(textView.text)
 			highlightTextViewModels.forEach {
 				currentHighlightTextViewModel = it
 				addSpan()
@@ -73,9 +73,9 @@ class HighlightTextHandler(private val textView: TextView) {
 		var startIndex = 0
 		var cont = 0
 		while (cont < currentHighlightTextViewModel.startPositionOccurence) {
-			startIndex = text.indexOf(currentHighlightTextViewModel.textToHighlight,
-			                          startIndex,
-			                          currentHighlightTextViewModel.ignoreCase)
+			startIndex = textView.text.indexOf(currentHighlightTextViewModel.textToHighlight,
+			                                   startIndex,
+			                                   currentHighlightTextViewModel.ignoreCase)
 			startIndex += 1
 			cont += 1
 		}
@@ -99,13 +99,13 @@ class HighlightTextHandler(private val textView: TextView) {
 	 */
 	private fun countOccurences(): Int {
 		return if (currentHighlightTextViewModel.ignoreCase) {
-			text.toString().toLowerCase()
+			textView.text.toString().toLowerCase()
 					.split(currentHighlightTextViewModel.textToHighlight.toLowerCase(),
 					       ignoreCase = currentHighlightTextViewModel.ignoreCase)
 					.count()
 		} else {
-			text.split(currentHighlightTextViewModel.textToHighlight,
-			           ignoreCase = currentHighlightTextViewModel.ignoreCase).count()
+			textView.text.split(currentHighlightTextViewModel.textToHighlight,
+			                    ignoreCase = currentHighlightTextViewModel.ignoreCase).count()
 		}
 
 	}
@@ -116,9 +116,9 @@ class HighlightTextHandler(private val textView: TextView) {
 	private fun setFormatToHighlightText(startIndex: Int) {
 		var currentIndex = startIndex
 		for (i in 1..getOccurences()) {
-			currentIndex = text.indexOf(currentHighlightTextViewModel.textToHighlight,
-			                            currentIndex,
-			                            currentHighlightTextViewModel.ignoreCase)
+			currentIndex = textView.text.indexOf(currentHighlightTextViewModel.textToHighlight,
+			                                     currentIndex,
+			                                     currentHighlightTextViewModel.ignoreCase)
 			if (currentIndex >= 0) {
 				try {
 					setStyleSpan(currentIndex)
@@ -163,7 +163,8 @@ class HighlightTextHandler(private val textView: TextView) {
 		}
 	}
 
-	fun buildViewModelFromAttrs(attrs: AttributeSet? = null, defStyleAttr: Int = 0): HighlightTextViewModel? {
+	fun buildViewModelFromAttrs(attrs: AttributeSet? = null,
+	                            defStyleAttr: Int = 0): HighlightTextViewModel? {
 		var viewModel: HighlightTextViewModel? = null
 		textView.context.theme.obtainStyledAttributes(
 				attrs,
