@@ -25,7 +25,7 @@ Atributo Xml | Definición
 ------------ | -------------
 htv_highlight_text | Cadena a buscar en el texto del TextView.  Valor obligatorio.
 htv_start_position_occurrence | Posición desde donde empieza a buscar. Posición 0 es el inicio. Por defecto, posición 0.
-htv_limit | Número de palabras que se quieren encontrar. Por defecto, son todas.
+htv_limit | Número de palabras que se quieren encontrar. Por defecto, son todas. Opciones disponibles: All, First, NumLimit(num), Default
 htv_highlight_style | Estilo de la cadena a buscar. Ej: R.style.Title. Por defecto, Bold.
 htv_ignorecase | Si se ignora mayúsculas y minúsculas. Por defecto false.
 
@@ -38,7 +38,7 @@ Atributo ViewModel | Definición
 textToHighlight | Cadena a buscar en el texto del TextView.  Valor obligatorio.
 clickHighlightText | Función que se ejecuta tras hacer click en la cadena a resaltar.
 startPositionOccurence | Posición desde donde empieza a buscar. Posición 0 es el inicio. Por defecto, posición 0.
-limit | Número de palabras que se quieren encontrar. Por defecto, son todas.
+limit | Número de palabras que se quieren encontrar. Por defecto, son todas.  Opciones disponibles: All, First, NumLimit(num), Default
 styleHighlightText | Estilo de la cadena a buscar. Ej: R.style.Title. Por defecto, Bold.
 ignoreCase | Si se ignora mayúsculas y minúsculas. Por defecto false.
 
