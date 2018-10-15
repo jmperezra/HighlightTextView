@@ -6,15 +6,15 @@ Una vez establecido el contenido en un TextView, **HighlightTextView** te permit
 **HightlightTextView** te evita tener que estar trabajando con SpannableString para tener que establecer los distintos estilos en un TextView. 
 
 ### Sus características principales son:
-* Permite resaltar una cadena.
-* Permite añadir el evento onclick en la cadena elegida.
-* Permite personalizar con un estilo la cadena a resaltar.
-* Permite añadir múltiples estilos.
-* Permite empezar a buscar la cadena en una posición determinada.
-* Permite establecer el número de ocurrencias que se quieren resaltar.
-* Permite ignorar mayúsculas y minúsculas.
-* Permite configurarse a través de xml o por código.
-* Permite trabajar con TextView personalizados.
+* Resaltar una cadena.
+* Añadir el evento onclick en la cadena elegida.
+* Personalizar con un estilo la cadena a resaltar.
+* Añadir múltiples estilos.
+* Empezar a buscar la cadena en una posición determinada.
+* Establecer el número de ocurrencias que se quieren resaltar.
+* Ignorar mayúsculas y minúsculas.
+* Configurarse a través de xml o por código.
+* Trabajar con TextView personalizados.
 
 ## Definición de opciones disponibles
 ### XML
