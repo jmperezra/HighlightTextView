@@ -5,6 +5,22 @@
 Una vez establecido el contenido en un TextView, **HighlightTextView** te permite de una forma sencilla, añadir estilos y eventos personalizados en múltiples cadenas.
 **HightlightTextView** te evita tener que estar trabajando con SpannableString para tener que establecer los distintos estilos en un TextView. 
 
+### Instalación:
+```
+allprojects {
+    repositories {
+      ...
+      maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+    implementation 'com.github.jmperezra:HighlightTextView:v1.0'
+}
+
+```
+
+
 ### Sus características principales son:
 * Resaltar una cadena.
 * Añadir el evento onclick en la cadena elegida.
