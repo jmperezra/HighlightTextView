@@ -13,8 +13,8 @@ Una vez establecido el contenido en un TextView, **HighlightTextView** te permit
 * Permite empezar a buscar la cadena en una posición determinada.
 * Permite establecer el número de ocurrencias que se quieren resaltar.
 * Permite ignorar mayúsculas y minúsculas.
-* Posibilidad de configurarse a través de xml o por código.
-* Trabaja con TextView personalizados.
+* Permite configurarse a través de xml o por código.
+* Permite trabajar con TextView personalizados.
 
 ## Definición de opciones disponibles
 ### XML
