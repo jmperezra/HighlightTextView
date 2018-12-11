@@ -1,12 +1,11 @@
 package com.jmperezra.highlighttextview
 
 
-import com.jmperezra.commons.Eval
-import com.jmperezra.commons.Option
+import com.jmperezra.commons.OnClickEvent
 
 class HighlightTextViewModel(val textToHighlight: String,
                              val styleHighlightText: Int = R.style.Bold,
-                             val clickHighlightText: Option<Eval>,
+                             val clickHighlightText: OnClickEvent?,
                              val startPositionOccurence: Int = 0,
                              val limit: HighlightTextLimit = HighlightTextLimit.All(),
                              val ignoreCase: Boolean = false)

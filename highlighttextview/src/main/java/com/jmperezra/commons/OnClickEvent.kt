@@ -2,4 +2,4 @@ package com.jmperezra.commons
 
 import android.view.View
 
-data class Eval(val f: (View) -> Unit)
+data class OnClickEvent(val f: (View) -> Unit)
