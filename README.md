@@ -15,7 +15,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.jmperezra:HighlightTextView:v1.0'
+    implementation 'com.github.jmperezra:HighlightTextView:v1.2'
 }
 
 ```
